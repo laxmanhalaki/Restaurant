@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
+import Home from './Home';
+import Order from "./Order"
 
-function App() {
+
+function App({Store}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<Home Store={Store} />}/>
+  <Route path="/orders" element={<Order Store={Store} />}/>
+</Routes>
+</BrowserRouter>
+<footer className='text-center text-success'>Designed and developed by | Laxman D H</footer>
     </div>
   );
 }
