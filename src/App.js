@@ -9,8 +9,8 @@ function App({Store}) {
     <div >
 <BrowserRouter>
 <Routes>
-  <Route path="/" element={<Home Store={Store} />}/>
-  <Route path="/orders" element={<Order Store={Store} />}/>
+  <Route path="/Restaurant" element={<Home Store={Store} />}/>
+  <Route path="/Restaurant/orders" element={<Order Store={Store} />}/>
 </Routes>
 </BrowserRouter>
 <footer className='text-center text-success'>Designed and developed by | Laxman D H</footer>

@@ -22,7 +22,7 @@ setNumber(number+1)
     <div>
       <nav className='navbar navbar-light p-3'>
         <a href="#" className='navbar-brand'>Restaurant</a>
-        <button className='btn btn-primary' onClick={()=>{navigate("/orders")}}>Order <span className='badge bg-secondary'>{number}</span></button>
+        <button className='btn btn-primary' onClick={()=>{navigate("/Restaurant/orders")}}>Order <span className='badge bg-secondary'>{number}</span></button>
       </nav>
       <div className='d-flex flex-wrap'>
       {
