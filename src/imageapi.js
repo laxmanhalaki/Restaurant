@@ -1,6 +1,6 @@
 
    {
-"	items": [
+"items": [
 		{
 			"id": 1,
 			"name": 'New-York Pizza',
